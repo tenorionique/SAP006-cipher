@@ -4,11 +4,48 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
 </head>
 <body>
-  <div id="root">
-    <h1>Hello world!</h1>
-  </div>
-  <script src="index.js" type="module"></script>
+  <header id="root">
+    <h1>Cifra de César</h1>
+  </header>
+  <main id="pagina">
+
+    <div id="keyNumber">
+      <label for="desloc">Digite uma chave de deslocamento:</label><br><br>
+      <input type="number" name="numero" id="desloc" min="1"> <br><br>
+    </div>
+
+    <div id="textCod">
+       <label for="text1">Digite o texto a ser codificado:</label><br><br>
+       <textarea name="texto" id="text1" cols="30" rows="10" placeholder="Digite aqui"></textarea><br><br>
+       <button id="butCifrar" class="button" type="button" name="myButton">Cifrar</button> 
+
+    </div>
+
+     <div id="textDecod">
+       <label for="textdois">Digite o texto a ser decodificado:</label><br><br>
+       <textarea name="texto" id="textodois" cols="30" rows="10"placeholder="Digite aqui"></textarea><br><br>
+       <button id="butDecifrar" class="button" type="button" name="myButtondois">Decifrar</button> <br><br>
+     </div>
+    
+     <div id="textResult">
+       <label for="result">A resposta encontrada foi: </label> <br><br>
+       <textarea name="texto3" id="result" cols="30" rows="10" placeholder="A resposta aparece aqui"> </textarea>
+
+     </div>
+
+   <!-- Arrumar esses brs que não podem ficar ai, tem que arrumar a margem -->
+  </main>
+    
+
+  <footer>
+    <p>&copy; Monique Doretto</p>
+
+  </footer>
+  <script src="index.js" type="module"></script> 
+ 
+ 
 </body>
 </html>

@@ -1,1 +1,74 @@
-/* css */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+
+body{
+    background-color: coral;
+    background-image: url('matrix.jpg');
+    font: normal 15pt Helvetica;
+
+}  
+header {
+    color: rgb(255, 249, 249);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+label {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    display: inline-block
+}
+input{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    display: inline-block
+}
+textarea{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    display: inline-block
+   /* text-transform: uppercase;  pra transformar tudo para maiuscula*/
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+input:focus{
+    background-color: rgb(126, 99, 247);
+}
+textarea:focus{
+    background-color: cornflowerblue;
+}
+button:hover{
+    color: crimson;
+
+} 
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button {background-color: #1f8530;} 
+  
