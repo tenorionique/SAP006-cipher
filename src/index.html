@@ -4,39 +4,45 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="matrix1.ico" type="image/x-icon">
 </head>
 <body>
   <header id="root">
     <h1>Cifra de César</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi earum eaque, reprehenderit tempore rem quibusdam doloribus aut harum facere nulla eveniet qui obcaecati maiores ad, nemo possimus deserunt! Excepturi, voluptatibus?</p>
   </header>
+
   <main id="pagina">
 
-    <div id="keyNumber">
-      <label for="desloc">Digite uma chave de deslocamento:</label><br><br>
-      <input type="number" name="numero" id="desloc" min="1"> <br><br>
+    <div id="keyNumber" class="flex-container">
+      <label for="desloc">Digite uma chave de deslocamento:</label>
+      <input type="number" name="numero" id="desloc" min="1"> 
     </div>
 
-    <div id="textCod">
-       <label for="text1">Digite o texto a ser codificado:</label><br><br>
-       <textarea name="texto" id="text1" cols="30" rows="10" placeholder="Digite aqui"> </textarea><br><br>
-       <button id="butCifrar" class="button" type="button" name="myButton">Cifrar</button> 
-
+    <div id="textCod" class="flex-container">
+       <label for="text1">Digite o texto a ser codificado:</label>
+       <textarea name="texto" id="text1" cols="30" rows="10" placeholder="Digite aqui"> </textarea>      
     </div>
 
-     <div id="textDecod">
-       <label for="textdois">Digite o texto a ser decodificado:</label><br><br>
-       <textarea name="texto" id="textodois" cols="30" rows="10" placeholder="Digite aqui"> </textarea><br><br>
-       <button id="butDecifrar" class="button" type="button" name="myButtondois">Decifrar</button> <br><br>
-     </div>
+    <div class="botaum">
+      <button id="butCifrar" class="button" type="button" name="myButton">Cifrar</button> 
+    </div>
+
+    <div id="textDecod" class="flex-container">
+       <label for="textdois">Digite o texto a ser decodificado:</label>
+       <textarea name="texto" id="textodois" cols="30" rows="10" placeholder="Digite aqui"> </textarea>
+    </div>
+
+    <div class="botaum">
+       <button id="butDecifrar" class="button" type="button" name="myButtondois">Decifrar</button> 
+    </div>
     
-     <div id="textResult">
-       <label for="result">A resposta encontrada foi: </label> <br><br>
+    <div id="textResult" class="flex-container">
+       <label for="result">A resposta encontrada foi: </label> 
        <textarea name="texto3" id="result" cols="30" rows="10" placeholder="A resposta aparece aqui"> </textarea>
+    </div>
 
-     </div>
-
-   <!-- Arrumar esses brs que não podem ficar ai, tem que arrumar a margem -->
+  
   </main>
     
 
