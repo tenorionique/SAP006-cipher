@@ -7,49 +7,41 @@
   <link rel="shortcut icon" href="matrix1.ico" type="image/x-icon">
 </head>
 <body>
-  <header id="root">
+  <header class="header-txt" id="root">
     <h1>Matrix de César</h1>
     <p>Você escolheu a pílula vermelha, agora sabe sobre a Matrix. Para comunicar-se com a Oráculo e membros da resistência, utilize a cifra de césar, cifre ou decifre sua mensagem e diminua os riscos dela ser interceptada pelo Agente Smith. </p>
   </header>
 
-  <main id="pagina">
+  <main id="pagina" class="main-page">
 
-    <div id="keyNumber" class="flex-container">
-      <label for="desloc">Digite uma chave de deslocamento:</label>
-      <input type="number" name="numero" id="desloc" min="1"> 
+    <div id="keyNumber" class="flex-container-input">
+      <label class="label-text" for="desloc">Digite uma chave de deslocamento:</label>
+      <input class="input-number"type="number" name="numero" id="desloc" min="1"> 
     </div>
 
     <div id="textCod" class="flex-container">
-       <label for="text1">Digite o texto a ser codificado:</label>
-       <textarea name="texto" id="text1" cols="30" rows="10" placeholder="Digite aqui"> </textarea>      
-    </div>
-
-    <div class="botaum">
-      <button id="butCifrar" class="button" type="button" name="myButton">Cifrar</button> 
+      <label class="label-text" for="text1">Digite o texto a ser codificado:</label>
+       <textarea class="txt-area" name="texto" id="text1" cols="30" rows="10" placeholder="Digite o texto a ser codificado"> </textarea>
+        <button id="butCifrar" class="button" type="button" name="myButton">Cifrar</button>      
     </div>
 
     <div id="textDecod" class="flex-container">
-       <label for="textdois">Digite o texto a ser decodificado:</label>
-       <textarea name="texto" id="textodois" cols="30" rows="10" placeholder="Digite aqui"> </textarea>
+      <label class="label-text" for="textdois">Digite o texto a ser decodificado:</label>
+       <textarea class="txt-area" name="texto" id="textodois" cols="30" rows="10" placeholder="Digite o texto"> </textarea>
+        <button id="butDecifrar" class="button" type="button" name="myButtondois">Decifrar</button> 
     </div>
 
-    <div class="botaum">
-       <button id="butDecifrar" class="button" type="button" name="myButtondois">Decifrar</button> 
-    </div>
-    
     <div id="textResult" class="flex-container">
-       <label for="result">A resposta encontrada foi: </label> 
-       <textarea name="texto3" id="result" cols="30" rows="10" placeholder="A resposta aparece aqui"> </textarea>
+       <label class="label-text" for="result">A resposta encontrada foi: </label> 
+       <textarea  class="txt-area" name="texto3" id="result" cols="30" rows="10" placeholder="A resposta aparece aqui"> </textarea>
     </div>
 
-  
   </main>
     
-
-  <footer>
+  <footer class="footer-txt">
     <p>&copy; Monique Doretto</p>
-    <p class="links">Não sabe o que é Cifra de César? <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar"> Clique aqui</a></p>
-    <p class="links">Tomou a pilula azul e não sabe o que é Matrix? <a href="https://pt.wikipedia.org/wiki/Matrix"> Clique aqui </a></p>
+    <p class="links">Não sabe o que é Cifra de César? <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" rel="noopener noreferrer" class="links"> Clique aqui</a></p>
+    <p class="links">Tomou a pilula azul e não sabe o que é Matrix? <a href="https://pt.wikipedia.org/wiki/Matrix" target="_blank" rel="noopener noreferrer" class="links"> Clique aqui </a></p>
 
   </footer>
   <script src="index.js" type="module"></script> 
