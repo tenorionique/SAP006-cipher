@@ -1,80 +1,169 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
-
-body{
-    background-color: rgba(21, 90, 4, 0.555);
-    background-image: url('matrix.jpg');
-    font: normal 15pt Helvetica;
-
-}  
-header {
-    color: rgb(255, 249, 249);
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20pt;
-    /* margin: 20cm; */
-}
-label, input , textarea {
-    background: rgba(255, 255, 255, 0.712);
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin-left: 500px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-footer {
-    color: white;
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-style: italic;
+body {
+  background-color: rgba(21, 90, 4, 0.555);
+  background-image: url(./img/matrix1.jpg);
+  font: normal 1.2rem Helvetica;
+}
 
+.header-txt {
+  color: rgb(255, 249, 249);
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  margin: 5vh;
 }
-input:focus{
-    background-color: rgb(31, 148, 50);
-}
-textarea:focus{
-    background-color:rgb(31, 148, 50);
-}
- button:hover{
-    color: rgb(31, 148, 50);
 
-} 
- .button {
-    border: none;
-    color: white;
-    padding: 15px 32px; 
-    border-radius: 10px;
-    width: 520px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Orbitron', sans-serif;
-     margin: 4px 2px; 
-    cursor: pointer;
-    background-color: #1f8530; 
+.main-page {
+  margin: 11vh 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-txt {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-style: italic;
+}
+
+.txt-area {
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.712);
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  max-height: 200px;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+}
+
+.label-text {
+  background: rgb(31, 133, 48);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input-number {
+  background: rgba(255, 255, 255, 0.712);
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+  border: none;
+}
+
+.button {
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
+  width: 290px;
+  cursor: pointer;
+  background-color: rgb(31, 133, 48);
+}
+
+.button:hover {
+  background-color: rgb(21, 98, 34);
+}
+
+.txt-area:focus {
+  background-color: rgba(255, 255, 255, 0.863);
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flex-container-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.links {
+  font: normal 1rem Helvetica;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.links a {
+  color: rgb(36, 182, 61);
+}
+
+/* Responsividade */
+@media (min-width: 1440px) {
+  .main-page {
+    margin: 12vh 3vh;
   }
-  
-
-  .flex-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: baseline;
-      
+  .txt-area {
+    width: 325px;
   }
 
- .botaum {
- padding-left: 33.5%;
- }
+  .label-text {
+    width: 325px;
+    text-align: center;
+  }
+  .header-txt {
+    margin: 2vh;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1439px) {
+  .header-txt {
+    margin: 2vh;
+  }
+  .main-page {
+    margin: 7vh 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
- .links {
-     font: normal 13pt Helvetica;
-     
- }
+  .txt-area {
+    width: 228px;
+  }
+
+  .button {
+    width: 220px;
+  }
+
+  .label-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1019px) {
+  .main-page {
+    margin: 6vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
